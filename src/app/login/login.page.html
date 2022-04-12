@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card center>
+    <ion-card-header>
+      Bienvenido
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label fixed>Correo:</ion-label>
+          <ion-input type="string"[(ngModel)]="correo" #email required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>Contraseña:</ion-label>
+          <ion-input type="password"[(ngModel)]="contrasena" #password required></ion-input>
+        </ion-item>
+      </ion-list>
+      
+      <div padding-left>
+        <ion-button size="small" type="submit" (click)="logIn(email, password)" expand="block">Ingresar</ion-button>
+      </div>
+      <ion-text color="danger">
+        <h4 >¿Sin cuenta? Registrate</h4>
+      </ion-text>
+      <div padding-right>
+        <ion-button expand="block" [routerLink]="['/registrar']" size="small">Registrar</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

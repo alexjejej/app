@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+      <ion-label fixed>Código de estudiante:</ion-label>
+      <ion-input type="number"[(ngModel)]="codigo"></ion-input>
+    </ion-item>
+
+     <ion-item>
+          <ion-label fixed>Contraseña:</ion-label>
+          <ion-input type="password"[(ngModel)]="contrasena"></ion-input>
+        </ion-item>
+
+    <ion-row>
+      <ion-col> 
+      <ion-button (click)="registrar()" expand="block">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+</ion-content>
