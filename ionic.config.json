@@ -1,0 +1,7 @@
+{
+  "name": "CutR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
