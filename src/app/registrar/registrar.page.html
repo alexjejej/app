@@ -8,13 +8,13 @@
 </ion-header>
 <ion-content>
     <ion-item>
-      <ion-label fixed>Código de estudiante:</ion-label>
-      <ion-input type="number"[(ngModel)]="codigo"></ion-input>
+      <ion-label fixed>Correo electrónico:</ion-label>
+      <ion-input type="string"[(ngModel)]="userModel.email"></ion-input>
     </ion-item>
 
      <ion-item>
           <ion-label fixed>Contraseña:</ion-label>
-          <ion-input type="password"[(ngModel)]="contrasena"></ion-input>
+          <ion-input type="password"[(ngModel)]="userModel.password"></ion-input>
         </ion-item>
 
     <ion-row>

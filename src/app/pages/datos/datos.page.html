@@ -12,49 +12,45 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-label fixed>Nombre completo:</ion-label>
-          <ion-input type="string"[(ngModel)]="nombre"></ion-input>
+          <ion-label fixed>Nombre(s):</ion-label>
+          <ion-input type="string"[ngModel]="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>Apellidos:</ion-label>
+          <ion-input type="string"[ngModel]="apellido"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Código de estudiante:</ion-label>
-          <ion-input type="number"[(ngModel)]="codigo"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label fixed>Correo electrónico</ion-label>
-          <ion-input type="string"[(ngModel)]="email"></ion-input>
+          <ion-input type="number"[ngModel]="codigo"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Carrera:</ion-label>
-          <ion-input type="text"[(ngModel)]="carrera"></ion-input>
+          <ion-input type="text"[ngModel]="carrera"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Semestre:</ion-label>
-          <ion-input type="number"[(ngModel)]="semestre"></ion-input>
+          <ion-input type="number"[ngModel]="semestre"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Edad</ion-label>
-          <ion-input type="number"[(ngModel)]="edad"></ion-input>
+          <ion-input type="number"[ngModel]="edad"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Género:</ion-label>
-          <ion-input type="text"[(ngModel)]="genero"></ion-input>
+          <ion-input type="text"[ngModel]="genero"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Estatura en cm</ion-label>
-          <ion-input type="number"[(ngModel)]="estatura"></ion-input>
+          <ion-input type="number"[ngModel]="estatura"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label fixed>Peso en kg:</ion-label>
-          <ion-input type="number"[(ngModel)]="peso"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label fixed>Contraseña:</ion-label>
-          <ion-input type="password"[(ngModel)]="contrasena"></ion-input>
+          <ion-input type="number"[ngModel]="peso"></ion-input>
         </ion-item>
       </ion-list>
       
       <div padding-left>
-        <ion-button size="small" [routerLink]="['/registrar']" (click)="guardar()">Guardar Datos</ion-button>
+        <ion-button size="small" [routerLink]="['/login']" (click)="guardar()">Guardar Datos</ion-button>
       </div>
     
     </ion-card-content>

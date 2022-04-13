@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class CarreraPage implements OnInit {
   
 
-  constructor() { }
+  constructor() {
+   /* stepcounter.deviceCanCountSteps().then((res: any) => {
+      if (res == false) {
+    
+        console.log('Oops!! Your device is not able to count your steps !!');
+         
+      }
+    }).catch((err) => console.log(err))*/
+   }
   
 
   ngOnInit() {
@@ -16,7 +24,7 @@ export class CarreraPage implements OnInit {
   }
 
 iniciar() {
-    
+ 
     }
 
 }

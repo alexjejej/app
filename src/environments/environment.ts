@@ -5,15 +5,16 @@
 export const environment = {
   production: false,
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
- firebaseConfig: {
-  apiKey: "AIzaSyA_5XFPja5j-rniPgSQhoqTgB0R5SHsrGU",
-  authDomain: "cutrunning.firebaseapp.com",
-  projectId: "cutrunning",
-  storageBucket: "cutrunning.appspot.com",
-  messagingSenderId: "492837370459",
-  appId: "1:492837370459:web:948ccd364366eea3dc9d7e",
-  measurementId: "G-VTV8P8Z411"
-},
+   firebaseConfig : {
+    apiKey: "AIzaSyA_5XFPja5j-rniPgSQhoqTgB0R5SHsrGU",
+    authDomain: "cutrunning.firebaseapp.com",
+    databaseURL: "https://cutrunning-default-rtdb.firebaseio.com",
+    projectId: "cutrunning",
+    storageBucket: "cutrunning.appspot.com",
+    messagingSenderId: "492837370459",
+    appId: "1:492837370459:web:0e792d7d000bf2a8dc9d7e",
+    measurementId: "G-5B3642XG61"
+  },
 };
 
 /*

@@ -11,6 +11,11 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
+import { Stepcounter } from '@laurentgoudet/ionic-native-stepcounter/ngx';
+import { AuthService } from './providers/auth-service';
+import {HttpClientModule} from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { StorageService } from './services/StorageService';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,8 +26,11 @@ import { environment } from '../environments/environment';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    HttpClientModule,
+    IonicStorageModule.forRoot(),
+    
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy,  },Stepcounter, AuthService, StorageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
